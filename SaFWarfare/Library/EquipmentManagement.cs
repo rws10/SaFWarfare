@@ -58,8 +58,8 @@ namespace SaFWarfare.Library
             objCommand.Parameters.Clear();
             objCommand.CommandText = "usp_ListWorkRequestById";
             objCommand.CommandType = CommandType.StoredProcedure;
-            try
-            {
+            //try
+            //{
                 fixConnectionState();
                 SqlDataReader dr = objCommand.ExecuteReader();
                 while (dr.Read())
@@ -78,7 +78,7 @@ namespace SaFWarfare.Library
 
                 }
                 dr.Close();
-            }
+            //}
 
             //catch (Exception ex)
             //{
