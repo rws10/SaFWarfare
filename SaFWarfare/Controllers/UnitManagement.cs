@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace SaFWarfare.Controllers
 {
-    public class HomeController : Controller
+    public class UnitManagement : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<UnitManagement> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public UnitManagement(ILogger<UnitManagement> logger)
         {
             _logger = logger;
         }
